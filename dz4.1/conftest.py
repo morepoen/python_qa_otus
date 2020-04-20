@@ -1,5 +1,4 @@
 import pytest
-import requests
 
 
 def pytest_addoption(parser):
@@ -22,9 +21,3 @@ def get_url(request):
 @pytest.fixture()
 def get_status_code(request):
     return request.config.getoption("--status_code")
-
-
-def test_ya(get_url,
-            get_status_code):
-    res = requests.get(get_url)
-    assert res.status_code == get_status_code
