@@ -10,5 +10,14 @@ class MainPageLocators:
 
 
 class CatalogPageLocators:
+    HEADER = (By.CSS_SELECTOR, '#top')
     SIDEBAR = (By.CSS_SELECTOR, '#column-left')
+    CURRENT_CATEGORY = (By.XPATH, '//h2')
+    CATEGORY_DESCRIPTION = (By.CSS_SELECTOR, '.col-sm-10')
+    PRODUCTS = (By.CSS_SELECTOR, '.product-thumb')
+
+
+class LoginPageLocators:
+    CONTINUE_BUTTON = (By.XPATH, '//div[@class="well"]/a[contains(@href, "register")]')
+
 
