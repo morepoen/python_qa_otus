@@ -19,5 +19,30 @@ class CatalogPageLocators:
 
 class LoginPageLocators:
     CONTINUE_BUTTON = (By.XPATH, '//div[@class="well"]/a[contains(@href, "register")]')
+    LOGIN_BUTTON = (By.CSS_SELECTOR, '[value=Login]')
+    EMAIL_FIELD = (By.CSS_SELECTOR, '#input-email')
+    PASSWORD_FIELD = (By.CSS_SELECTOR, '#input-password')
+    SIDEBAR = (By.CSS_SELECTOR, '#column-right')
+
+
+class ProductPageLocators:
+    DESCRIPTION = (By.CSS_SELECTOR, '#tab-description')
+    PRODUCT_PICTURES = (By.XPATH, '//a[@title="Samsung Galaxy Tab 10.1"]')
+    PRICE = (By.XPATH, '//li/h2')
+    QUANTITY_FIELD = (By.CSS_SELECTOR, '#input-quantity')
+    ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, '#button-cart')
+
+
+class AdminPageLocators:
+    USERNAME = (By.CSS_SELECTOR, '#input-username')
+    PASSWORD = (By.CSS_SELECTOR, '#input-password')
+    LOGIN_BUTTON = (By.CSS_SELECTOR, '[type=submit]')
+    FORGOT_PASSWORD = (By.XPATH, '//a[contains(@href, "forgotten")]')
+    FORM_TITLE = (By.CSS_SELECTOR, '.panel-title')
+
+
+
+
+
 
 
